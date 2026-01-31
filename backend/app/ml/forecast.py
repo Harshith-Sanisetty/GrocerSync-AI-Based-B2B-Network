@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 def predict_shortage(db: Session, product_id: int):
     """
-    Predicts when stock will run out using a simple Moving Average for now.
+    Predicts when stock will run out using a SMA for now.
     Can be upgraded to XGBoost/LSTM.
     """
     # Fetch product
